@@ -4,9 +4,9 @@ $('a[href*=#]').click
 (
 	function()
 	{
-		if(this.getAttribute("href") === "#join")
+		var href;
+		if((href = this.getAttribute("href")) === "#join")
 		{
-			var href = $.attr(this, 'href');
 			$root.animate
 			(
 				{
@@ -22,7 +22,7 @@ $('a[href*=#]').click
 		}
 		else
 		{
-			$(this).next().slideToggle("fast");
+			$(href + ' section').slideToggle("fast");
 		}
 	}
 );

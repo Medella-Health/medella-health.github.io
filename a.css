@@ -199,19 +199,15 @@ h1, h2, h3
 
 
 
-#accordion section p {
+#accordion section {
     display: none;
 }
 
-#accordion section a {
-    color: black;
-    text-decoration: none;
-}
-
-#accordion section a:hover {
+a {
+    color: inherit;
     text-decoration: underline;
 }
 
-/*#accordion section:target p {
-    display: block;
-}*/
+a:hover {
+    font-weight: bold;
+}
