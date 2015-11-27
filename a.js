@@ -1,5 +1,5 @@
 var $root = $('html, body');
-console.log('fuck')
+$(window.location.hash + ' + section').slideToggle("fast");
 $('a[href*=#]').click
 (
 	function()
@@ -22,11 +22,9 @@ $('a[href*=#]').click
 		}
 		else
 		{
-			$(href + ' section').slideToggle("fast");
+			$(href + ' + section').slideToggle("fast");
 		}
 	}
 );
 
-particlesJS.load('particle', 'particles.json', function() {
-  console.log('callback - particles.js config loaded');
-});
+particlesJS.load('particle', 'particles.json');
