@@ -31,7 +31,7 @@ h1, h2, h3
 
 .InputAddOn-item
 {
-	background: #000000;
+	background: #444;
 	color: #ffffff;
 	font-family: inherit;
 	font-size: 1em;
@@ -44,7 +44,7 @@ h1, h2, h3
 
 .InputAddOn-item:hover
 {
-	background-color: #000000;
+	background-color: #1d1d1d;
 }
 
 #hero
@@ -176,7 +176,7 @@ a:hover
 	justify-content: space-around;
 }
 
-svg
+.container svg
 {
 	position: absolute;
 	top: 0;
@@ -189,4 +189,20 @@ footer
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
+}
+
+footer ul
+{
+	list-style: none;
+	padding: 0;
+}
+
+footer ul li
+{
+	display: inline;
+}
+
+footer ul li img, footer ul li svg
+{
+	height: 1em;
 }
