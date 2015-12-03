@@ -31,7 +31,7 @@ h1, h2, h3
 
 .InputAddOn-item
 {
-	background: #fc4237;
+	background: #000000;
 	color: #ffffff;
 	font-family: inherit;
 	font-size: 1em;
@@ -44,7 +44,7 @@ h1, h2, h3
 
 .InputAddOn-item:hover
 {
-	background-color: #d4372f;
+	background-color: #000000;
 }
 
 #hero
