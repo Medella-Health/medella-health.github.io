@@ -183,3 +183,10 @@ svg
 	bottom: 0;
 	margin: auto;
 }
+
+footer
+{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
