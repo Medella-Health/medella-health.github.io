@@ -10,13 +10,9 @@ $('a[href*=#]').click
 			$root.animate
 			(
 				{
-					scrollTop: $(href).offset().top
+					scrollTop: $("#hero").height()
 				},
-				750,
-				function()
-				{
-					window.location.hash = href;
-				}
+				750
 			);
 			return false;
 		}
