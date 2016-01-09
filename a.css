@@ -74,20 +74,15 @@ h1, h2, h3
 	text-decoration: none !important;
 }
 
-section
+/*section
 {
 	display: none;
-}
+}*/
 
 a
 {
 	color: inherit;
 	text-decoration: underline;
-}
-
-a:hover
-{
-	font-weight: bold;
 }
 
 .box
@@ -136,22 +131,7 @@ a:hover
 {
 	transition: all 300ms ease-out;
 	transform: translateY(2.5em);
-}
-
-.box .title
-{
-	font-size: 2.5em;
-	text-transform: uppercase;
-	opacity: 0;
-	transition-delay: 0.1s;
-	transition-duration: 0.2s;
-}
-
-.box:hover .title,
-.box:focus .title
-{
-	opacity: 1;
-	transform: translateY(0px);
+	text-align: center;
 }
 
 .box .tagline
@@ -174,6 +154,7 @@ a:hover
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
+
 }
 
 .container svg
@@ -204,5 +185,5 @@ footer ul li
 
 footer ul li img, footer ul li svg
 {
-	height: 2em;
+	height: 1.25em;
 }
