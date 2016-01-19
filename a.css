@@ -69,8 +69,7 @@ h1, h2, h3
 
 #scroll
 {
-	font-size: 4em;
-	font-weight: bold;
+	height: 2em;
 	cursor: pointer;
 }
 a
