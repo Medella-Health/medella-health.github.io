@@ -1,22 +1,21 @@
+var foo;
+var j = 0;
 document.getElementById('scroll').onclick = function()
 {
-	scrollTo(document.body, Math.max(document.documentElement.clientHeight, window.innerHeight || 0), 600);
-};
-function scrollTo(element, to, duration)
-{
-	var difference = to - element.scrollTop;
-	var perTick = difference / duration * 10;
-	setTimeout
+	foo = setInterval
 	(
 		function()
 		{
-			element.scrollTop += perTick;
-			if(element.scrollTop === to) return;
-			scrollTo(element, to, duration - 10);
+			window.scroll(0, j += 10);
+			if(j >= Math.max(document.documentElement.clientHeight, window.innerHeight || 0))
+			{
+				j = 0;
+				clearInterval(foo);
+			}
 		},
-		10
+		1
 	);
-}
+};
 particlesJS.load('particle', 'particles.json');
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
