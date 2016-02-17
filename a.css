@@ -157,3 +157,20 @@ footer ul li img, footer ul li svg
 {
 	height: 1.25em;
 }
+
+#accordion
+{
+	list-style: none;
+	padding: 0;
+}
+
+#accordion h3
+{
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.section
+{
+	overflow: hidden;
+}
